@@ -107,7 +107,7 @@ sources: # bootcdn (default), unpkg
 
 ## => Sharing
 ##############################
-sharing:ture
+sharing: ture
   provider: addtoany
 
   ## AddThis
@@ -127,7 +127,7 @@ comments:
   ##Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    :8bb5909cdd2c98bc3edb
+    clientID    : 8bb5909cdd2c98bc3edb
     clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
     repository  : https://github.com/HongjieTan/hongjietan.github.io
     owner       : HongjieTan
@@ -173,7 +173,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id :UA-170181857-1
+    tracking_id : UA-170181857-1
     anonymize_ip: true
 
 
