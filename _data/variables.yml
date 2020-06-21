@@ -1,7 +1,7 @@
 default:
   text_skin: default
   highlight_theme: default
-  lang: en
+  lang: zh
   paths:
     root: /
     home: /
@@ -33,7 +33,7 @@ default:
     show_author_profile: false
     show_subscribe: false
     full_width: false
-    sharing: false
+    sharing: ture
     comment: true
     license: false
     pageview: false
