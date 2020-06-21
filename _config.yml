@@ -189,8 +189,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README-*.md
-  - README.md
   - gulpfile.js
   - jekyll-text-theme.gemspec
   - package-lock.json
