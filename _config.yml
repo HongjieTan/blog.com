@@ -107,7 +107,7 @@ sources: # bootcdn (default), unpkg
 
 ## => Sharing
 ##############################
-sharing: ture
+sharing: 
   provider: addtoany
 
   ## AddThis
