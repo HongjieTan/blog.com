@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -223,3 +224,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+=======
+theme: jekyll-theme-cayman
+>>>>>>> 9b248ec017cbc0279a6e5f0efdbc5e63d349b634
