@@ -1,7 +1,5 @@
 header:
-  - titles:  
-       en:       Blog
-       zh:       博客
+  - title:      博客
     url:        /blog/
   - titles:
       en:       Archive
