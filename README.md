@@ -1,6 +1,6 @@
 # hjtan.xyz
 
-My Personal Website:
+My Blog:
 
 Visit => [hjtan.xyz](https://hjtan.xyz).
 
