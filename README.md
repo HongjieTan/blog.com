@@ -1,6 +1,4 @@
-# hjtan.xyz
-
-My Blog:
+## My Blog:
 
 Visit => [hjtan.xyz](https://hjtan.xyz).
 
