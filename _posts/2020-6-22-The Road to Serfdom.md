@@ -1,6 +1,16 @@
 ---
 layout: article
 title: 通往奴役之路——推荐
+mode: immersive
+header:
+  theme: dark
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    src: /docs/assets/images/cover3.jpg
 key: 2020-6-22-14
 tags: 程序员与书
 category: blog
