@@ -21,7 +21,7 @@ highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "t
 url     : https://hjtan.xyz
 baseurl : # does not include hostname
 title   : HongjieTan's Blog
-description: 故事和技术
+description: Stories and technology
 
 
 ## => Language and Timezone
