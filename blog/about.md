@@ -4,7 +4,7 @@ title: 关于
 key: about_1
 sharing: true
 ---
-# 关于
+关于
 
 ## 谭宏劼
 
