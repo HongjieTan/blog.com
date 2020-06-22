@@ -35,7 +35,7 @@ timezone: Asia/Shanghai
 author:
   type      : # "person" (default), "organization"
   name      : HongjieTan
-  url       :
+  url       : https://hjtan.xyz
   avatar    : # path or url of avatar image (square)
   bio       : A student studying embedded.
   email     : HongjieTan@outlook.com
