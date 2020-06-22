@@ -11,7 +11,7 @@ sharing: true
 ## 技能
 
 - STM32(ST库),CC2530(Z-Stack)
-- Linux(bash,bootload,makefile,系统移植),FreeRTOS(系统移植)
+- Linux(bash,bootload,makefile,	Socket,系统移植),FreeRTOS(系统移植)
 - 驱动开发(LCD驱动,UART驱动)
 - 物联网通信协议(ZigBee,蓝牙,WIFI,RFID)
 - Git,UML,SQL,Qt
