@@ -106,7 +106,7 @@ comments:
     repository  : blogtalk
     owner       : HongjieTan
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-       - 52663710
+       - HongjieTan
 
 
 ## => Pageview
