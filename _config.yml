@@ -84,7 +84,7 @@ chart:  true
 
 ## => Paginate
 ##############################
-paginate: 2
+paginate: 6
 paginate_path: /page:num # don't change this unless for special need
 
 
