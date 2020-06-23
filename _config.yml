@@ -68,10 +68,6 @@ excerpt_separator: <!--more-->
 ## license
 license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
-## TOC
-toc:
-  selectors: # "h1,h2,h3" (default)
-
 
 ## => Markdown Enhancements
 ##############################
@@ -107,7 +103,7 @@ comments:
   gitalk:
     clientID    : 8bb5909cdd2c98bc3edb
     clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
-    repository  : https://github.com/HongjieTan/blogtalk
+    repository  : blogtalk
     owner       : HongjieTan
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
        - 52663710
