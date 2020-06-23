@@ -92,7 +92,11 @@ paginate_path: /page:num # don't change this unless for special need
 ## => Sharing
 ##############################
 sharing: 
-  provider: addtoany
+  provider: addthis # false (default), "addtoany", "addthis", "custom"
+
+  ## AddThis
+  addthis:
+    id: ra-5be59ee2486770cb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
 
 
 ## => Comments
