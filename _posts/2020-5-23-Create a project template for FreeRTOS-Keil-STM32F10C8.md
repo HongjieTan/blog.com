@@ -34,7 +34,7 @@ show_author_profile: true
 
 ## ST库的拷贝
 
-首先将ST库Libraries文件夹下的CMSIS和STM32F10x_StdPeriph_Driver拷贝到你创建的文件夹的Libraries文件夹下，然后将STM32F10x_StdPeriph_Driver文件夹下的src和inc这两个文件夹下的stm32f10x_it.c和stm32f10x_it.h拷贝到你创建的文件夹下的User文件夹下，最后将ST库Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x目录下的stm32f10x_conf.h拷贝到你创建的文件夹下的User文件夹下。
+首先将ST库**Libraries**文件夹下的**CMSIS和STM32F10x_StdPeriph_Driver**拷贝到你创建的文件夹的**Libraries**文件夹下，然后将**STM32F10x_StdPeriph_Driver文件夹下的src和inc**这两个文件夹下的**stm32f10x_it.c和stm32f10x_it.h**拷贝到你创建的文件夹下的**User**文件夹下，最后将ST库**Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x**目录下的**stm32f10x_conf.h**拷贝到你创建的文件夹下的**User**文件夹下。
 
 |---
 | ST库->自建工程文件夹 | 文件
@@ -47,14 +47,22 @@ show_author_profile: true
 
 ## FreeRTOS的拷贝
 
-首先将你下载下来的FreeRTOS文件夹下的FreeRTOS\Source文件夹下的所有文件拷贝你创建的FreeRTOS文件夹下，然后将其中portable文件夹下的除了RVDS和MemMang文件夹之外全部删除，最后将你下载下来的FreeRTOS文件夹下的FreeRTOS\Demo\CORTEX_STM32F103_Keil文件夹下的FreeRTOSConfig.h拷贝到你创建的文件夹下的User文件夹下。
+首先将你下载下来的FreeRTOS文件夹下的**FreeRTOS\Source**文件夹下的**所有文件**拷贝你创建的**FreeRTOS**文件夹下，然后将其中**portable**文件夹下的除了**RVDS和MemMang文件夹之外全部删除**，最后将你下载下来的FreeRTOS文件夹下的**FreeRTOS\Demo\CORTEX_STM32F103_Keil**文件夹下的**FreeRTOSConfig.h**拷贝到你创建的文件夹下的**User**文件夹下。
+
+|---
+| FreeRTOS系统->自建工程文件夹 | 文件
+|-|:-
+| FreeRTOS\Source->FreeRTOS | All File
+| FreeRTOS\Demo\CORTEX_STM32F103_Keil->User | FreeRTOSConfig.h
+| 删除FreeRTOS\Source\portable | 除RVDS和MemMang文件夹之外所有
+|---
 
 ## Keil的配置
 
 ![Image](https://s1.ax1x.com/2020/06/23/NUSQwn.png)
 
-接下来进入Keil在你创建的文件夹下的Project文件夹下创建工程硬件选择STM32F10C8，然后在工程下如上图所示分别创建文件夹并添加文件，其中startup_stm32f10x_ld_vl.s位于Libraries\CMSIS\startup文件夹下，heap_x.c在FreeRTOS\portable\MemMang文件夹下。  
-最后需要配置魔术棒选项卡,首先修改Target选项卡下的Xtal(MHz)为12.0,然后给Output选项卡下的Create HEX File打上勾，然后修改C/C++选项卡下的Optimization为Level 3，然后在Include Paths选项卡中添加5条：
+接下来进入Keil在你创建的文件夹下的Project文件夹下创建工程硬件选择STM32F10C8，然后在工程下如上图所示分别创建文件夹并添加文件，其中**startup_stm32f10x_ld_vl.s**位于**Libraries\CMSIS\startup**文件夹下，**heap_x.c**在**FreeRTOS\portable\MemMang**文件夹下。  
+最后需要配置魔术棒选项卡,首先修改**Target**选项卡下的Xtal(MHz)为12.0,然后给**Output**选项卡下的Create HEX File打上勾，然后修改**C/C++**选项卡下的Optimization为Level 3，然后在Include Paths选项卡中添加5条：
 1. ..\Libraries\CMSIS
 2. ..\Libraries\FMLIB\inc
 3. ..\User
