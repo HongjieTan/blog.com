@@ -16,12 +16,11 @@
 
 ## => Site Settings
 ##############################
-text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://hjtan.xyz
-baseurl : /
-title   : HongjieTan's Blog
-description: 故事和技术
+url: https://tianqi.name
+baseurl: /
+title: Qi's Site
+description: >
+    Tian Qi's Site | 田琦的小站
 
 
 ## => Language and Timezone
@@ -33,31 +32,28 @@ timezone: Asia/Shanghai
 ## => Author and Social
 ##############################
 author:
-  name      : HongjieTan
-  url       : https://hjtan.xyz
-  avatar    : assets/images/avatar.png
-  bio       : A student studying embedded.
-  email     : HongjieTan@outlook.com
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  linkedin  : 宏劼-谭-66a1a81ab
-  github    : HongjieTan
+  name: Tian Qi
+  email: kitian616@outlook.com
+  twitter: kitian616
+  github:  kitian616
+  googleplus: 101827554735084402671
+  weibo: 234695683
+  douban: kitian616
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: HongjieTan/hongjietan.github.io
+repository: kitian616/kitian616.github.io
 repository_tree: master
 
 
 ## => Paths
 ##############################
 paths:
-  root    : /
-  home    : /blog
-  archive : /blog/archive.html
-  rss     : /feed.xml
+  root: /
+  home: /blog
+  archive: /blog/archive.html
+  rss:  /feed.xml
 
 
 ## => Post
@@ -66,80 +62,46 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
-
-
-## => Markdown Enhancements
-##############################
-## Mathjax
-mathjax: true
-mathjax_autoNumber: true
-
-## Mermaid
-mermaid: true
-
-## Chart
-chart:  true
+license: CC-BY-4.0
 
 
 ## => Paginate
 ##############################
-paginate: 6
-paginate_path: /page:num # don't change this unless for special need
-
-
-
-## => Sharing
-##############################
-sharing: 
-  provider: addthis # false (default), "addtoany", "addthis", "custom"
-
-  ## AddThis
-  addthis:
-    id: ra-5ef1861cce3ad741 # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+paginate: 7
+paginate_path: /blog/page:num
 
 
 ## => Comments
 ##############################
 comments:
-  provider: gitalk
-
-  gitalk:
-    clientID    : 8bb5909cdd2c98bc3edb
-    clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
-    repository  : blogtalk
-    owner       : HongjieTan
-    admin: [HongjieTan]
+  provider: disqus
+  disqus:
+    shortname: kitian616-github-io
 
 
 ## => Pageview
 ##############################
 pageview:
   provider: leancloud
-
-  ## Leancloud
   leancloud:
-    app_id    : wMhjwFPCwjH9NaXos5wojqjs-gzGzoHsz
-    app_key   : opllhhdFu2OBEP1cnV9YXr2N
-    app_class : leancloud
+    app_id: uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
+    app_key: Mzf5m9skSwYVWVXhGiYMNyXs
+    app_class: ThomasBlog
 
 
 ## => Analytics
 ##############################
 analytics:
   provider: google
-
-  ## Google Analytics
   google:
-    tracking_id : UA-170181857-1
-    anonymize_ip: true
+    tracking_id: UA-71907556-1
 
 
 ## => Build
 ##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
+markdown: kramdown
+highlighter: rouge
+permalink: date
 
 exclude:
   - CHANGELOG.md
@@ -165,7 +127,6 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
       license: true
       aside:
         toc: true
@@ -177,7 +138,13 @@ defaults:
 ## => Plugins
 ##############################
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
+
+
+## => Server
+##############################
+server_url: "0.0.0.0"
+port: 4001
