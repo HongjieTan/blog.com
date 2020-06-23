@@ -105,8 +105,7 @@ comments:
     clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
     repository  : blogtalk
     owner       : HongjieTan
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-       - HongjieTan
+    admin: [HongjieTan]
 
 
 ## => Pageview
