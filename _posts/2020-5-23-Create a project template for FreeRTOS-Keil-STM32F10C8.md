@@ -30,7 +30,7 @@ show_author_profile: true
 
 想要完成本工程模板，大家首先需要下载好[FreeRTOS系统](https://freertos.org/a00104.html)以及[ST库](https://www.st.com/content/st_com/en/products/embedded-software/mcu-mpu-embedded-software/stm32-embedded-software/stm32-standard-peripheral-libraries/stsw-stm32054.html#resource),然后需要创建一个文件夹来存放如下图所示的工程的文件目录。
 
-![gif](https://s1.ax1x.com/2020/06/23/NNLQC4.md.gif)
+![gif](https://s1.ax1x.com/2020/06/23/NUGQF1.gif)
 
 ## ST库的拷贝
 
