@@ -20,6 +20,6 @@ sharing: true
 
 ## 关于我
 
-**爱捣鼓；爱折腾；爱学习；爱分享。** 喜欢游泳 ![Image](https://s1.ax1x.com/2020/06/23/NUO0UK.png){:width="25px" height="25px"}，跑步 :runner:和看书:books:这就是我一个不成熟但在努力成长的大学生。  
+**爱捣鼓；爱折腾；爱学习；爱分享。** 喜欢游泳 ![Image](https://s1.ax1x.com/2020/06/23/NUO0UK.png){:width="25px" height="35px"}，跑步 :runner:和看书:books:这就是我一个不成熟但在努力成长的大学生。  
 我会在这里把所有我学习过的折腾过的东西分享给大家，并且帮助大家避过我碰上的坑。我希望每一位点进我博客的朋友们都能收获知识和快乐。
 如果你在阅览的时候碰到任何问题欢迎在下方留言，或者给我发邮件：[hongjietan@outlook.com](mailto:hongjietan@outlook.com)
