@@ -119,12 +119,6 @@ sharing:
 comments:
   provider: gitalk
 
-  ## Disqus
-  disqus:
-    shortname: # the Disqus shortname for the site
-
-  ##Gitalk
-  # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
     clientID    : 8bb5909cdd2c98bc3edb
     clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
