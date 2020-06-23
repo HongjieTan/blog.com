@@ -1,9 +1,8 @@
 ---
 layout: article
-title: 关于
+title: HongjieTan's Blog
 key: about_1
 sharing: true
-show_title: false
 ---
 
 
