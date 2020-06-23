@@ -19,7 +19,7 @@
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://hjtan.xyz
-baseurl : # does not include hostname
+baseurl : /
 title   : HongjieTan's Blog
 description: 故事和技术
 
@@ -33,23 +33,16 @@ timezone: Asia/Shanghai
 ## => Author and Social
 ##############################
 author:
-  type      : # "person" (default), "organization"
   name      : HongjieTan
   url       : https://hjtan.xyz
   avatar    : assets/images/avatar.png
   bio       : A student studying embedded.
   email     : HongjieTan@outlook.com
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
-  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : 宏劼-谭-66a1a81ab
   github    : HongjieTan
-  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
@@ -61,7 +54,7 @@ repository_tree: master
 ## => Paths
 ##############################
 paths:
-  root    : # title link url, "/" (default)
+  root    : /
   home    : # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
@@ -99,19 +92,11 @@ paginate: 8
 paginate_path: /page:num # don't change this unless for special need
 
 
-## => Sources
-##############################
-sources: # bootcdn (default), unpkg
-
 
 ## => Sharing
 ##############################
 sharing: 
   provider: addtoany
-
-  ## AddThis
-  addthis:
-    id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx
 
 
 ## => Comments
@@ -127,15 +112,6 @@ comments:
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
        - 52663710
 
-  ## Valine
-  # please refer to https://valine.js.org/en/ for more info.
-  valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
-    placeholder : # Prompt information
-    visitor     : # false (default)
-    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
-
 
 ## => Pageview
 ##############################
@@ -147,16 +123,6 @@ pageview:
     app_id    : wMhjwFPCwjH9NaXos5wojqjs-gzGzoHsz
     app_key   : opllhhdFu2OBEP1cnV9YXr2N
     app_class : leancloud
-
-
-## => Search
-##############################
-search:
-  provider: default # "default" (default), false, "google", "custom"
-
-  ## Google Custom Search Engine
-  google:
-    custom_search_engine_id: # Google Custom Search Engine ID
 
 
 ## => Analytics
