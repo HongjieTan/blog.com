@@ -59,5 +59,4 @@ author: Hongjie Tan
 
 {% highlight c linenos %}
 #include port.c
-{:.success}
-{% endhighlight %}
+{% endhighlight %}{:.success}
