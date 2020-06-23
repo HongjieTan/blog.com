@@ -19,7 +19,7 @@ mermaid: true
 sharing: true
 aside:
   toc: true
-author: Hongjie Tan
+author: HongjieTan
   show_author_profile: true
 ---
 
