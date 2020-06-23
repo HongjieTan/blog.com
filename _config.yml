@@ -34,7 +34,6 @@ timezone: Asia/Shanghai
 ##############################
 author:
   name      : HongjieTan
-  url       : https://hjtan.xyz
   avatar    : assets/images/avatar.png
   bio       : A student studying embedded.
   email     : HongjieTan@outlook.com
@@ -54,10 +53,10 @@ repository_tree: master
 ## => Paths
 ##############################
 paths:
-  root    : /
-  home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
-  rss     : # "/feed.xml" (default)
+  root: /
+  home: /blog
+  archive: /blog/archive.html
+  rss:  /feed.xml
 
 
 ## => Post
@@ -66,8 +65,7 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
-
+license: CC-BY-4.0
 
 ## => Markdown Enhancements
 ##############################
@@ -81,13 +79,10 @@ mermaid: true
 ## Chart
 chart:  true
 
-
 ## => Paginate
 ##############################
-paginate: 6
-paginate_path: /page:num # don't change this unless for special need
-
-
+paginate: 7
+paginate_path: /blog/page:num
 
 ## => Sharing
 ##############################
@@ -97,7 +92,6 @@ sharing:
   ## AddThis
   addthis:
     id: ra-5ef1861cce3ad741 # AddThis pubid, e.g. ra-5xxxxxxxxxxx
-
 
 ## => Comments
 ##############################
@@ -137,16 +131,18 @@ analytics:
 
 ## => Build
 ##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
+markdown: kramdown
+highlighter: rouge
+permalink: date
 
 exclude:
   - CHANGELOG.md
-  - HOW_TO_RELEASE.md
+  - CHECKLIST.md
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - README-*.md
+  - README.md
   - gulpfile.js
   - jekyll-text-theme.gemspec
   - package-lock.json
@@ -175,7 +171,13 @@ defaults:
 ## => Plugins
 ##############################
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
+
+
+## => Server
+##############################
+server_url: "0.0.0.0"
+port: 4001
