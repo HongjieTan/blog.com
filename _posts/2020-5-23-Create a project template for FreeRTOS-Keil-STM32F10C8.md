@@ -58,4 +58,5 @@ show_author_profile: true
 
 {% highlight c linenos %}
 #include port.c
-{% endhighlight %}{:.success}
+{% endhighlight %}
+{:.success}
