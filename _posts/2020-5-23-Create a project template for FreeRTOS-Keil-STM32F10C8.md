@@ -32,7 +32,9 @@ show_author_profile: true
 
 ![gif](https://s1.ax1x.com/2020/06/23/NUGQF1.gif)
 
-## ST库的拷贝
+## 工程文件夹的创建
+
+### ST库的拷贝
 
 首先将ST库**Libraries**文件夹下的**CMSIS和STM32F10x_StdPeriph_Driver**拷贝到你创建的文件夹的**Libraries**文件夹下，然后将**STM32F10x_StdPeriph_Driver文件夹下的src和inc**这两个文件夹下的**stm32f10x_it.c和stm32f10x_it.h**拷贝到你创建的文件夹下的**User**文件夹下，最后将ST库**Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x**目录下的**stm32f10x_conf.h**拷贝到你创建的文件夹下的**User**文件夹下。
 
@@ -45,7 +47,7 @@ show_author_profile: true
 | Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x->User | stm32f10x_conf.h
 |---
 
-## FreeRTOS的拷贝
+### FreeRTOS的拷贝
 
 首先将你下载下来的FreeRTOS文件夹下的**FreeRTOS\Source**文件夹下的**所有文件**拷贝你创建的**FreeRTOS**文件夹下，然后将其中**portable**文件夹下的除了**RVDS和MemMang文件夹之外全部删除**，最后将你下载下来的FreeRTOS文件夹下的**FreeRTOS\Demo\CORTEX_STM32F103_Keil**文件夹下的**FreeRTOSConfig.h**拷贝到你创建的文件夹下的**User**文件夹下。
 
@@ -69,10 +71,34 @@ show_author_profile: true
 4. ..\FreeRTOS\include
 5. ..\FreeRTOS\portable\RVDS\ARM_CM3
 
-## Fixing Bugs
-
+## DEBUG
+### 修改task.c
 编译之后Keil会报错提示我们缺少port系列的函数，这是因为FreeRTOS的task.c需要调用到port.c中的函数却没有包含它，所以我们需要打开task.c添如下代码：
 
 {% highlight c linenos %}
 #include port.c
 {% endhighlight %}
+
+### 修改stm32f10x_it.c
+
+先注释掉PendSV_Handler()与SVC_Handler()，然后如下所示修改SysTick_Handler()
+
+{% highlight c linenos %}
+void SysTick_Handler(void)
+{    
+    #if (INCLUDE_xTaskGetSchedulerState  == 1 )
+      if (xTaskGetSchedulerState() != taskSCHEDULER_NOT_STARTED)
+     {
+    #endif  /* INCLUDE_xTaskGetSchedulerState */  
+        xPortSysTickHandler();
+    #if (INCLUDE_xTaskGetSchedulerState  == 1 )
+     }
+   #endif  /* INCLUDE_xTaskGetSchedulerState */
+}
+{% endhighlight %}
+
+## 模板提供
+
+[模板](https://github.com/HongjieTan/STM32F103C8-FreeRTOS-Keil_Prj_tem)。  
+
+不过大家都看到这里了为何不尝试自己创建一个呢QWQ
