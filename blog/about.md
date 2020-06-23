@@ -19,6 +19,8 @@ sharing: true
 - Python 数据分析,深度学习(Tensorflow,Keras)
 <!--more-->
 
+## 关于我
+
 **爱捣鼓；爱折腾；爱学习；爱分享。** 喜欢游泳 :swimming:，跑步 :runner:和看书:books:这就是我一个不成熟但在努力成长的大学生。  
 我会在这里把所有我学习过的折腾过的东西分享给大家，并且帮助大家避过我碰上的坑。我希望每一位点进我博客的朋友们都能收获知识和快乐。
 如果你在阅览的时候碰到任何问题欢迎在下方留言，或者给我发邮件：[hongjietan@outlook.com](mailto:hongjietan@outlook.com)
