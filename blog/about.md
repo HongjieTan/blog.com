@@ -1,10 +1,9 @@
 ---
 layout: article
-title: HongjieTan's Blog
+title: 谭宏劼的博客
 key: about_1
 sharing: true
 ---
-
 
 欢迎来到我的博客，我是谭宏劼一个正在学习嵌入式的大学生。
 
