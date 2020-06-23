@@ -19,8 +19,7 @@ mermaid: true
 sharing: true
 aside:
   toc: true
-author: HongjieTan
-  show_author_profile: true
+show_author_profile: true
 ---
 
 今天我在这里为大家分享如何创建自己的FreeRTOS+Keil+STM32F10C8工程模板，并且重点讲解容易出现error的地方，希望大家看过本文后都能熟练的创建工程模板。
