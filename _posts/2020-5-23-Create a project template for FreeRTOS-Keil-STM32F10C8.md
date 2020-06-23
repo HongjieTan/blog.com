@@ -34,7 +34,16 @@ show_author_profile: true
 
 ## ST库的拷贝
 
-首先将ST库Libraries文件夹下的CMSIS和STM32F10x_StdPeriph_Driver拷贝到你创建的文件夹的Libraries文件夹下，然后将STM32F10x_StdPeriph_Driver文件夹下的crc和inc这两个文件夹下的stm32f10x_it.c和stm32f10x_it.h拷贝到你创建的文件夹下的User文件夹下，最后将ST库\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x目录下的stm32f10x_conf.h拷贝到你创建的文件夹下的User文件夹下。
+首先将ST库Libraries文件夹下的CMSIS和STM32F10x_StdPeriph_Driver拷贝到你创建的文件夹的Libraries文件夹下，然后将STM32F10x_StdPeriph_Driver文件夹下的src和inc这两个文件夹下的stm32f10x_it.c和stm32f10x_it.h拷贝到你创建的文件夹下的User文件夹下，最后将ST库Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x目录下的stm32f10x_conf.h拷贝到你创建的文件夹下的User文件夹下。
+
+|---
+| ST库->自建工程文件夹 | 文件
+|-|:-
+| Libraries->Libraries | CMSIS,STM32F10x_StdPeriph_Driver
+| STM32F10x_StdPeriph_Driver\src->User | stm32f10x_it.c
+| STM32F10x_StdPeriph_Driver\inc->User | stm32f10x_it.h
+| Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x->User | stm32f10x_conf.h
+|---
 
 ## FreeRTOS的拷贝
 
