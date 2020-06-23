@@ -57,4 +57,5 @@ aside:
 
 {% highlight c linenos %}
 #include port.c
+{:.success}
 {% endhighlight %}
