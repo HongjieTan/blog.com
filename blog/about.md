@@ -9,13 +9,16 @@ sharing: true
 
 ## 技能
 
-- STM32(ST库),CC2530(Z-Stack)
-- Linux(bash,bootload,makefile,	Socket,系统移植),FreeRTOS(系统移植)
-- 驱动开发(LCD驱动,UART驱动)
-- 物联网通信协议(ZigBee,蓝牙,WIFI,RFID)
-- Git,UML,SQL,Qt
-- 敏捷开发,领域驱动开发,演进式架构
-- Python 数据分析,深度学习(Tensorflow,Keras)
+- 编程语言：c、python、Java
+- 芯片：STM32(ST库)、CC2530(Z-Stack)
+- 操作系统：
+1. Linux：Bash、bootload、makefile、Socket、内核、系统移植
+2. FreeRTOS：内核、系统移植
+- 驱动开发：LCD屏驱动、UART串口驱动
+- 物联网通信协议：Zigbee、蓝牙、WIFI、RFID
+- 开发工具：IAR、Keil、Qt、Git、SQL、UML
+- 编程思想：敏捷开发、设计模式、领域驱动开发、演进式架构
+- 其他：numpy、pandas、matplotlib、Tensorflow、Keras
 <!--more-->
 
 ## 关于我
