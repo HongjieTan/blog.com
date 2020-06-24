@@ -1,13 +1,14 @@
 ---
 layout: article
-title: 谭宏劼的博客
+title: 愚思
 key: about_1
 sharing: true
 ---
+## 关于我
 
-欢迎来到我的博客，我是谭宏劼一个正在学习嵌入式的大学生。
+**爱捣鼓；爱折腾；爱学习；爱分享。** 喜欢游泳 ![Image](https://s1.ax1x.com/2020/06/23/NUOgKA.png){:width="35px" height="35px"}，跑步 :runner:和看书:books:这就是我一个还不成熟但在努力成长的大学生。  
 
-## 技能
+### 我的技能
 
 - 编程语言：c、python、Java
 - 芯片：STM32(ST库)、CC2530(Z-Stack)
@@ -19,10 +20,9 @@ sharing: true
 - 开发工具：IAR、Keil、Qt、Git、SQL、UML
 - 编程思想：敏捷开发、设计模式、领域驱动开发、演进式架构
 - 其他：numpy、pandas、matplotlib、Tensorflow、Keras
-<!--more-->
 
-## 关于我
+## 关于本站
 
-**爱捣鼓；爱折腾；爱学习；爱分享。** 喜欢游泳 ![Image](https://s1.ax1x.com/2020/06/23/NUOgKA.png){:width="35px" height="35px"}，跑步 :runner:和看书:books:这就是我一个不成熟但在努力成长的大学生。  
-我会在这里把所有我学习过的折腾过的东西分享给大家，并且帮助大家避过我碰上的坑。我希望每一位点进我博客的朋友们都能收获知识和快乐。
+我会在这里把所有我学习过的折腾过的东西分享给大家，并且帮助大家避过我碰上的坑。我希望每一位点进我博客的朋友们都能收获知识和快乐。  
+因为我一向好读书却不求甚解，本人又年轻气盛、学识浅薄,所以发表的内容难免会有大量的疏漏，还望大家海涵。  
 如果你在阅览的时候碰到任何问题欢迎在下方留言，或者给我发邮件：[hongjietan@outlook.com](mailto:hongjietan@outlook.com)
