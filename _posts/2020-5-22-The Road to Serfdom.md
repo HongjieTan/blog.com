@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 通往奴役之路——推荐
+title: 通往奴役之路——欧洲社会主义浪潮下的叛逆者
 mode: immersive
 header:
   theme: dark
