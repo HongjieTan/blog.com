@@ -22,7 +22,7 @@ aside:
 show_author_profile: true
 ---
 
-今天我在这里为大家分享如何创建自己的FreeRTOS+Keil+STM32F10C8工程模板，并且重点讲解容易出现error的地方，希望大家看过本文后都能熟练的创建工程模板。
+很多初学FreeRTOS的朋友在搭建自己的工程项目时一定会有很多的迷茫，所以我将在这里为大家分享如何创建自己的FreeRTOS+Keil+STM32F10C8工程模板，并且重点讲解容易出现error的地方，希望大家看过本文后都能熟练的创建工程模板。
 
 <!--more-->
 
@@ -75,7 +75,7 @@ show_author_profile: true
 ### 修改task.c
 编译之后Keil会报错提示我们缺少port系列的函数，这是因为FreeRTOS的task.c需要调用到port.c中的函数却没有包含它，所以我们需要打开task.c添如下代码：
 
-{% highlight c linenos %}
+{% highlight C linenos %}
 #include port.c
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ show_author_profile: true
 
 先注释掉PendSV_Handler()与SVC_Handler()，然后如下所示修改SysTick_Handler()
 
-{% highlight c linenos %}
+{% highlight C linenos %}
 void SysTick_Handler(void)
 {    
     #if (INCLUDE_xTaskGetSchedulerState  == 1 )
