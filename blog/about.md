@@ -1,8 +1,9 @@
 ---
 layout: article
-title: 愚思
+title: 关于
 key: about_1
 sharing: true
+show_title: false
 ---
 ## 关于我
 
