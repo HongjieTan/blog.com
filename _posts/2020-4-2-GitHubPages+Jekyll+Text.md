@@ -133,7 +133,7 @@ comments:
     visitor     : # false (default)  
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site  
 
-comments:  provider:这里用来配置你的博客的聊天工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。
+comments:  provider:这里用来配置你的博客的评论工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。
 1. 首先要创建一个GitHub仓库，名字可以随意设置
 2. 然后你需要进入[github的工具配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字，homepage和Authorization callback URL设置为你的博客域名其他不用管
 3. 创建成功后你需要复制clientID和clientSecret粘贴到配置文件中，repository填写你刚刚创建的仓库名，owner和admin都是你的github账号。
