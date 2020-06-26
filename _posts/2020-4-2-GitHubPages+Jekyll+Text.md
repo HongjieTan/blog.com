@@ -86,9 +86,9 @@ author:
   url       :  
   avatar    : # path or url of avatar image (square)  
 
-1. lang设置你的博客的语言，比如中文zh
-2. timezone设置你的博客的时区，如中国Asia/Shanghai
-3. Author必须设置的只有name：你的名字，avatar：你的头像的图床url（图床本人推荐[路过图床](https://imgchr.com/)）。type和url不用管它，后面还有一些配置自己按需设置即可。
+- lang设置你的博客的语言，比如中文zh
+- timezone设置你的博客的时区，如中国Asia/Shanghai
+- Author必须设置的只有name：你的名字，avatar：你的头像的图床url（图床本人推荐[路过图床](https://imgchr.com/)）。type和url不用管它，后面还有一些配置自己按需设置即可。
 
 ### Sharing配置
 
@@ -134,9 +134,9 @@ comments:
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site  
 
 comments:  provider:这里用来配置你的博客的聊天工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。
-1. 首先要创建一个仓库名字可以随意设置
-2. 然后你需要进入[github的工具配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字homepage和Authorization callback URL设置为你的博客域名其他不用管
-3. 创建成功后你需要复制clientID和clientSecret粘贴到配置文件中，repository填写你刚刚创建的仓库名，owner和  admin都是你的github账号。
+1. 首先要创建一个GitHub仓库，名字可以随意设置
+2. 然后你需要进入[github的工具配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字，homepage和Authorization callback URL设置为你的博客域名其他不用管
+3. 创建成功后你需要复制clientID和clientSecret粘贴到配置文件中，repository填写你刚刚创建的仓库名，owner和admin都是你的github账号。
 
 ### Pageview配置
 
@@ -151,7 +151,7 @@ pageview:
     app_key   : # LeanCloud App key  
     app_class : # LeanCloud App class  
 
-pageview:  provider:用来设置你的文书访问量
+pageview:  provider:用来设置你的文章访问量
 1. 你可将其配置为leancloud
 2. 然后进入[leancloud官网](https://leancloud.cn/dashboard/applist.html#/apps)注册账号
 3. 然后点击右上角控制台，然后点左边的应用-创建应用创建开发版
@@ -172,7 +172,7 @@ analytics:
     tracking_id : # Google Analytics id for the site  
     anonymize_ip: false # Anonymize IP tracking for Analytics  
 
-analytics:  provider:这里用于配置你的站点信息统计，你可是设置成google使用谷歌的服务，先进入[google Analytics](https://analytics.google.com/)（这里需要翻墙），进入后创建服务然后将tracking_id复制到配置文件，anonymize_ip:设置为ture即可
+analytics:  provider:这里用于配置你的站点信息统计，你可是设置成google使用谷歌的服务，先进入[google Analytics](https://analytics.google.com/)（这里需要翻墙），进入后创建服务然后将tracking_id复制到配置文件，anonymize_ip:设置为ture即可。（意义不大）
 
 ## 定制自己的logo
 
