@@ -103,7 +103,7 @@ comments:
   valine:
     app_id  : wMhjwFPCwjH9NaXos5wojqjs-gzGzoHsz
     app_key : opllhhdFu2OBEP1cnV9YXr2N
-    placeholder : 说点什么吧^_^ 
+    placeholder : 说点什么吧！（恳请在名字处留下你的大名^_^ ）
     meta : 名字,邮箱,网址
 
 
