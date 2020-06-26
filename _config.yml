@@ -103,6 +103,8 @@ comments:
   valine:
     app_id  : wMhjwFPCwjH9NaXos5wojqjs-gzGzoHsz
     app_key : opllhhdFu2OBEP1cnV9YXr2N
+    placeholder : 说点什么吧^_^ 
+    meta : 名字,邮箱,网址
 
 
 ## => Pageview
