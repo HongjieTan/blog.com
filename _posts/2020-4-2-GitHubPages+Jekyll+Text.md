@@ -22,6 +22,10 @@ aside:
 show_author_profile: true
 ---
 
+因为本人目前使用的就是GitHubPages+Jekyll+Text的个人博客，而且效果还很不错，所以就在这推荐给大家，并分享一下搭建的流程。
+
+<!--more-->
+
 ## 创建GitHubPages仓库
 
 如果没有github账号的话，请进入[github](https://github.com/)点击SignUp注册账号，点击右上角的YourRepositories然后点击New创建一个新的仓库，仓库名字为：你的GitHub账号.github.io  
@@ -133,7 +137,7 @@ comments:
     visitor     : # false (default)  
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site  
 
-comments:  provider:这里用来配置你的博客的评论工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。
+comments:  provider:这里用来配置你的博客的评论工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。考虑到我国特殊的国情其实还是Valine更加实用一点，不过Valine的设置完全和后面的Pageview配置一样所有就不多做介绍了（你只需要配置app_的这两项就可以了）。
 1. 首先要创建一个GitHub仓库，名字可以随意设置
 2. 然后你需要进入[github的工具配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字，homepage和Authorization callback URL设置为你的博客域名其他不用管
 3. 创建成功后你需要复制clientID和clientSecret粘贴到配置文件中，repository填写你刚刚创建的仓库名，owner和admin都是你的github账号。
