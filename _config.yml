@@ -67,7 +67,7 @@ license: CC-BY-4.0
 
 ## TOC
 toc:
-  selectors: h1,h2,h3,h4
+  selectors: "h1,h2,h3,h4"
 
 ## => Markdown Enhancements
 ##############################
