@@ -181,3 +181,8 @@ analytics:  provider:这里用于配置你的站点信息统计，你可是设�
 2. 然后进入[RealFaviconGenerator](https://realfavicongenerator.net/)点击Select your Favicon picture选择图片
 3. 然后设置网站路径为/assets，点击Generate your Favicons and HTML code开始生成
 4. 下载favicon包解压到/assets文件夹下，用HTML代码替换掉 _includes/head/favicon.html 文件中的代码
+
+## 相关链接
+
+- [TeXt Theme官方中文文档](https://tianqi.name/jekyll-TeXt-theme/docs/zh/configuration)
+- [jekyll官方中文文档](http://jekyllcn.com/docs/home/)
