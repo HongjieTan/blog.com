@@ -98,14 +98,11 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk
+  provider: valine
 
-  gitalk:
-    clientID    : 8bb5909cdd2c98bc3edb
-    clientSecret: 11a1282a17d4bf469059b939f15088d7739b233b
-    repository  : blogtalk
-    owner       : HongjieTan
-    admin: [HongjieTan]
+  valine:
+    app_id  : wMhjwFPCwjH9NaXos5wojqjs-gzGzoHsz
+    app_key : opllhhdFu2OBEP1cnV9YXr2N
 
 
 ## => Pageview
