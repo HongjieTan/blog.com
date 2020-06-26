@@ -73,7 +73,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 
 3. 设置github仓库
 
-进入你创建的GitHubPages仓库，点击Settings在GitHubPages栏中填写你刚刚购买的域名，然后将下方的钩打上开启HTTPS。
+进入你创建的GitHubPages仓库，点击Settings在GitHubPages项Custom domain栏中填写你刚刚购买的域名，然后将下方的Enforce HTTPS 钩上开启HTTPS。
 
 ### Language and Timezone和Author and Social配置
 
