@@ -65,15 +65,15 @@ description: > # this means to ignore newlines until "Language & timezone"
 
 1. 选购自己喜欢的域名
 
-进入namesilo之后在搜索栏填写自己想要的域名前缀，然后搜索会在下方出现你输入的前缀+后缀组合，选择一个后点击购物车进行购买，namesilo可以使用支付宝和微信购买，购买成功后进入域名管理界面，设置你的域名服务器的Server1和Server2设置为f1g1ns1.dnspod.net和f1g1ns2.dnspod.net。
+进入namesilo之后在搜索栏填写自己想要的域名前缀，然后搜索会在下方出现你输入的前缀+后缀组合，选择一个后点击购物车进行购买，namesilo可以使用支付宝和微信购买，购买成功后进入域名管理界面，将你的域名服务器的Server1 和Server2 设置为f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net。
 
 2. 使用DNS域名服务器
 
-进入[DNSPod](https://www.dnspod.cn/)注册账号然后添加域名，然后给域名添加解析服务，直接添加两条CNAME类型的（@+CNAME和wwww+CNAME），地址都填写你创建的仓库名字即可。
+进入[DNSPod](https://www.dnspod.cn/)注册账号然后添加域名，然后给域名添加解析服务，直接添加两条CNAME类型的（@ + CNAME 和 wwww + CNAME），地址都填写你创建的仓库名字即可。
 
 3. 设置github仓库
 
-进入你创建的GitHubPages仓库，点击Settings在GitHubPages项Custom domain栏中填写你刚刚购买的域名，然后将下方的Enforce HTTPS 钩上开启HTTPS。
+进入你创建的GitHubPages仓库，点击Settings在GitHubPages项 Custom domain 栏中填写你刚刚购买的域名，然后将下方的 Enforce HTTPS 钩上开启HTTPS。
 
 ### Language and Timezone和Author and Social配置
 
@@ -92,7 +92,7 @@ author:
 
 - lang设置你的博客的语言，比如中文zh
 - timezone设置你的博客的时区，如中国Asia/Shanghai
-- Author必须设置的只有name：你的名字，avatar：你的头像的图床url（图床本人推荐[路过图床](https://imgchr.com/)）。type和url不用管它，后面还有一些配置自己按需设置即可。
+- Author必须设置的只有name：你的名字，avatar：你的头像的url（图床本人推荐[路过图床](https://imgchr.com/)）。type和url不用管它，后面还有一些配置自己按需设置即可。
 
 ### Sharing配置
 
@@ -105,7 +105,7 @@ sharing:
   addthis:  
     id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx  
 
-sharing:  provider:这里可以用来配置你的博客用于分享的组件，你可以简单的使用addtoany，或者使用addthis。但是addthis需要你自己进入[addthis官网](https://www.addthis.com/)，注册并且配置你自己的分享组件，而且在注册的时候可能需要翻墙，配置好你的addthis组件后将id复制并粘贴到配置文件即可。
+sharing:  provider:这里可以用来配置你的博客用于分享的组件，你可以简单的使用 addtoany，或者使用 addthis 。但是addthis需要你自己进入[addthis官网](https://www.addthis.com/)，注册并且配置你自己的分享组件，而且在注册的时候可能需要翻墙，配置好你的addthis组件后将id复制并粘贴到配置文件即可。
 
 ### Comments配置
 
@@ -138,9 +138,10 @@ comments:
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site  
 
 comments:  provider:这里用来配置你的博客的评论工具，你可选用disqus、gittalk、valine，我就简单的以gittalk为例来讲解如何配置。考虑到我国特殊的国情其实还是Valine更加实用一点，不过Valine的设置完全和后面的Pageview配置一样所有就不多做介绍了（你只需要配置app_的这两项就可以了）。
+
 1. 首先要创建一个GitHub仓库，名字可以随意设置
-2. 然后你需要进入[github的工具配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字，homepage和Authorization callback URL设置为你的博客域名其他不用管
-3. 创建成功后你需要复制clientID和clientSecret粘贴到配置文件中，repository填写你刚刚创建的仓库名，owner和admin都是你的github账号。
+2. 然后你需要进入[github的配置页面](https://github.com/settings/apps/new)创建gittalk,谁便写一个名字，homepage 和 Authorization callback URL 设置为你的博客域名其他不用管
+3. 创建成功后你需要复制 clientID 和 clientSecret 粘贴到配置文件中，repository 填写你刚刚创建的仓库名，owner 和 admin 都是你的github账号。
 
 ### Pageview配置
 
@@ -159,9 +160,9 @@ pageview:  provider:用来设置你的文章访问量
 1. 你可将其配置为leancloud
 2. 然后进入[leancloud官网](https://leancloud.cn/dashboard/applist.html#/apps)注册账号
 3. 然后点击右上角控制台，然后点左边的应用-创建应用创建开发版
-4. 然后点击你刚刚创建的应用点击存储，点击创建class
-5. 设置一个名字然后创建并且将名字复制到app_class后
-6. 之后点击左侧的设置然后点击应用key后复制app_id和app_key
+4. 然后点击你刚刚创建的应用点击存储，点击创建 class
+5. 设置一个名字然后创建并且将名字复制到 app_class 后
+6. 之后点击左侧的设置然后点击应用key后复制 app_id 和 app_key 到配置文件
 
 
 ### Analytics配置
@@ -181,10 +182,10 @@ analytics:  provider:这里用于配置你的站点信息统计，你可是设�
 ## 定制自己的logo
 
 如果你需要自己定制logo，
-1. 你需要替换_includes/svg/logo.svg
-2. 然后进入[RealFaviconGenerator](https://realfavicongenerator.net/)点击Select your Favicon picture选择图片
-3. 然后设置网站路径为/assets，点击Generate your Favicons and HTML code开始生成
-4. 下载favicon包解压到/assets文件夹下，用HTML代码替换掉 _includes/head/favicon.html 文件中的代码
+1. 你需要替换 _includes/svg/logo.svg
+2. 然后进入[RealFaviconGenerator](https://realfavicongenerator.net/)点击 Select your Favicon picture 选择图片
+3. 然后设置网站路径为 /assets ，点击 Generate your Favicons and HTML code 开始生成
+4. 下载 favicon 包解压到 /assets 文件夹下，用HTML代码替换掉  _includes/head/favicon.html 文件中的代码
 
 ## 相关链接
 
