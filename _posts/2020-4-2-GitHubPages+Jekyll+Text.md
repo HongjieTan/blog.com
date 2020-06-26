@@ -65,7 +65,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 
 1. 选购自己喜欢的域名
 
-进入namesilo之后在搜索栏填写自己想要的域名前缀，然后搜索会在下方出现你输入的前缀+后缀组合，选择一个后点击购物车进行购买，namesilo可以使用支付宝和微信购买。
+进入namesilo之后在搜索栏填写自己想要的域名前缀，然后搜索会在下方出现你输入的前缀+后缀组合，选择一个后点击购物车进行购买，namesilo可以使用支付宝和微信购买，购买成功后进入域名管理界面，设置你的域名服务器的Server1和Server2设置为f1g1ns1.dnspod.net和f1g1ns2.dnspod.net。
 
 2. 使用DNS域名服务器
 
