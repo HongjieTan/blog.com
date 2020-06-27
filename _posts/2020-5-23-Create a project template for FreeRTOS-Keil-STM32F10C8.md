@@ -61,9 +61,9 @@ show_author_profile: true
 
 ## Keil的配置
 
-![Image](https://s1.ax1x.com/2020/06/23/NUSQwn.png)
+![Image](https://s1.ax1x.com/2020/06/27/N6MYpd.png)
 
-接下来进入Keil在你创建的文件夹下的Project文件夹下创建工程硬件选择STM32F10C8，然后在工程下如上图所示分别创建文件夹并添加文件，其中**startup_stm32f10x_ld_vl.s**位于**Libraries\CMSIS\startup**文件夹下，**heap_x.c**在**FreeRTOS\portable\MemMang**文件夹下。  
+接下来进入Keil在你创建的文件夹下的Project文件夹下创建工程硬件选择STM32F10C8，然后在工程下如上图所示分别创建文件夹并添加文件，其中**startup_stm32f10x_ld_vl.s**位于**Libraries\CMSIS\startup**文件夹下，**heap_x.c**在**FreeRTOS\portable\MemMang**文件夹下，port.c在FreeRTOS\portable\RVDS\ARM_CM3。  
 最后需要配置魔术棒选项卡,首先修改**Target**选项卡下的Xtal(MHz)为12.0,然后给**Output**选项卡下的Create HEX File打上勾，然后修改**C/C++**选项卡下的Optimization为Level 3，然后在Include Paths选项卡中添加5条：
 1. ..\Libraries\CMSIS
 2. ..\Libraries\FMLIB\inc
@@ -71,15 +71,7 @@ show_author_profile: true
 4. ..\FreeRTOS\include
 5. ..\FreeRTOS\portable\RVDS\ARM_CM3
 
-## DEBUG
-### 修改task.c
-编译之后Keil会报错提示我们缺少port系列的函数，这是因为FreeRTOS的task.c需要调用到port.c中的函数却没有包含它，所以我们需要打开task.c添如下代码：
-
-{% highlight C linenos %}
-#include port.c
-{% endhighlight %}
-
-### 修改stm32f10x_it.c
+## 修改stm32f10x_it.c
 
 先注释掉PendSV_Handler()与SVC_Handler()，然后如下所示修改SysTick_Handler()
 
